@@ -1,0 +1,27 @@
+int[] arr = {1, 2, 3, 4, 5};
+ 
+ Map<String, Integer> arrayCounter = new HashMap();
+ 
+ for(int index=0;index<arr.size();index++){
+    if(arrayCounter.contains(arr[index]+"")){
+        arrayCounter.put(arr[index]+"",arrayCounter.get(arr[index])+1);
+    }else{
+        arrayCounter.put(arr[index]+"",1);
+    }
+ }
+ 
+ for(String key: arrayCounter.keySet()){
+    system.out.println(key+"="+arrayCounter.get(key));
+ }
+ 
+ 
+ 
+ 
+ WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+ wait.until(ExpectedConditions.elementToBeClicable(driver.findElement(By.xpath(""))))
+ 
+ 
+ List<WebElement> listAllDropDown=driver.FindElements(driver.findElements(By.xpath("")));
+ for(WebElement getText:listAllDropDown){
+ System.out,println(getText.getText());
+ }
